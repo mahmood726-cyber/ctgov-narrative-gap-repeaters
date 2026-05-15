@@ -1,0 +1,96 @@
+{
+  "title": "CT.gov Narrative Gap Repeaters",
+  "slug": "ctgov-narrative-gap-repeaters",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-29",
+  "body": "Which named sponsors accumulate the most CT.gov narrative-gap pages where detailed descriptions and primary outcome descriptions are both missing from older study records? We analysed 249,507 eligible older closed interventional studies from the March 29, 2026 full-registry snapshot. We ranked named sponsors with at least 100 older studies by narrative-gap stock and rate, then compared description-black-box counts, condition extremes, and sponsor-class rates. Boehringer Ingelheim carried the largest narrative-gap stock at 706 studies, followed by Hoffmann-La Roche at 555 and GlaxoSmithKline at 526. Mylan Pharmaceuticals Inc had the sharpest large-sponsor narrative-gap rate at 93.7 percent, healthy-volunteer studies reached 22.0 percent, and industry reached 19.5 percent as a sponsor class. The narrative-gap view shows a different kind of registry opacity because many pages retain dates and status fields yet omit the text needed to understand what was actually studied for readers. Narrative gaps here are registry-page omissions, not proof that protocols or outcome descriptions were never written elsewhere.",
+  "word_count": 156,
+  "sentence_count": 7,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Which named sponsors accumulate the most CT.gov narrative-gap pages where detailed descriptions and primary outcome descriptions are both missing from older study records?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We analysed 249,507 eligible older closed interventional studies from the March 29, 2026 full-registry snapshot."
+    },
+    {
+      "role": "Method",
+      "text": "We ranked named sponsors with at least 100 older studies by narrative-gap stock and rate, then compared description-black-box counts, condition extremes, and sponsor-class rates."
+    },
+    {
+      "role": "Primary result",
+      "text": "Boehringer Ingelheim carried the largest narrative-gap stock at 706 studies, followed by Hoffmann-La Roche at 555 and GlaxoSmithKline at 526."
+    },
+    {
+      "role": "Secondary result",
+      "text": "Mylan Pharmaceuticals Inc had the sharpest large-sponsor narrative-gap rate at 93.7 percent, healthy-volunteer studies reached 22.0 percent, and industry reached 19.5 percent as a sponsor class."
+    },
+    {
+      "role": "Interpretation",
+      "text": "The narrative-gap view shows a different kind of registry opacity because many pages retain dates and status fields yet omit the text needed to understand what was actually studied for readers."
+    },
+    {
+      "role": "Boundary",
+      "text": "Narrative gaps here are registry-page omissions, not proof that protocols or outcome descriptions were never written elsewhere."
+    }
+  ],
+  "notes": {
+    "app": "CT.gov Narrative Gap Repeaters dashboard",
+    "data": "249,507 eligible older closed interventional studies with narrative-gap fields derived from missing detailed descriptions and missing primary-outcome descriptions",
+    "code": "https://github.com/mahmood726-cyber/ctgov-narrative-gap-repeaters",
+    "doi": "",
+    "version": "1.0.0",
+    "date": "2026-03-29",
+    "validation": "FULL REGISTRY RUN"
+  },
+  "type": "methods",
+  "primary_estimand": "Narrative-gap stock and rate among named lead sponsors with at least 100 older studies",
+  "validation": {
+    "status": "fail",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": true,
+        "detail": "Found 7 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 156 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": true,
+        "detail": "Sentence 4 should include a quantitative result such as a percentage, count, or interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": true,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": false,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}
